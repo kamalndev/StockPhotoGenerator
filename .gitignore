@@ -33,3 +33,31 @@ build/
 .vscode/
 
 **/application.properties
+
+# ————— Monorepo root ignores —————
+
+
+# Don’t commit your secret properties file
+/backend/src/main/resources/application.properties
+
+
+
+# 4) IDE files
+/.idea/
+/*.iml
+
+# React deps & build
+/frontend/node_modules/
+/frontend/build/
+
+# Spring Boot build & secrets
+/backend/target/
+/backend/.mvn/
+/backend/mvnw*
+/backend/mvnw.cmd
+/backend/src/main/resources/application.properties
+
+# IDE & OS cruft
+/.idea/
+/*.iml
+.DS_Store
